@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<minecraftItems lang="es">
+    <item>
+        <id>1</id>
+        <name>Hacha de piedra</name>
+        <type>herramienta</type>
+        <rarity>piedra</rarity>
+        <damage>2</damage>
+        <description>Herramienta para cortar arboles 2 dmg</description>
+    </item>
+    
+     <item>
+        <id>2</id>
+        <name>espada de diamante</name>
+        <type>arma</type>
+        <rarity>diamante</rarity>
+        <damage>7</damage>
+        <description>arma corto alcancede 7 dmg</description>
+    </item>
+   
+    <item>
+        <id>3</id>
+        <name>arco</name>
+        <type>arma</type>
+        <rarity>madera</rarity>
+        <damage>3</damage>
+        <description>arma largo alcancede 3 dmg</description>
+     </item>
+    
+     <item>
+        <id>4</id>
+        <name>pico de netherite</name>
+        <type>herramienata</type>
+        <rarity>netherite</rarity>
+        <damage>6</damage>
+        <description>herramienta para piedra con 6 dmg</description>
+    </item>
+    
+    <item>
+        <id>5</id>
+        <name>pico de madera</name>
+        <type>herramienata</type>
+        <rarity>madera</rarity>
+        <damage>1</damage>
+        <description>herramienta para piedra con 1 dmg</description>
+    </item>
+
+
+ </minecraftItems>
