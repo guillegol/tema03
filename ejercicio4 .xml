@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ASIR lang="es">
+    <Alumno>
+        <nombre>Guillermo </nombre>
+        <apellidos>Santos Juanes </apellidos>
+        <nia>10816452</nia>
+    </Alumno>
+    <modulos>
+        <modulo>
+             <nombre_mod>Planificacion de sistemas</nombre_mod>
+             <nota>8</nota>
+        </modulo>
+        <modulo>    
+            <nombre_mod>fol</nombre_mod>
+            <nota>6</nota>
+        </modulo>
+        <modulo>   
+            <nombre_mod>Lenguaje</nombre_mod>
+            <nota>7</nota>
+        </modulo>
+        <modulo>   
+            <nombre_mod>Ingles</nombre_mod>
+            <nota>4</nota>
+        </modulo>
+        <modulo>   
+            <nombre_mod>Administracion</nombre_mod>
+            <nota>10</nota>
+        </modulo>
+    </modulo>
