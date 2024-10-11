@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<curriculum lang="es">
+    <curriculum>
+        <datos_personales>
+            <nombre> Guillermo </nombre>
+            <apellidos>Santos Juanes Zafra </apellidos>
+            <direccion>Calle pansa n1 </direccion>
+            <telefono>634346419</telefono>
+            <dni>53942170V </dni>
+        </datos_personales>
+        <datos_academicos>
+            <primaria>Carmelitas Denia</primaria>
+            <eso>Carmelitas Denia</eso>
+            <grado_medio>Ausias March Valencia</grado_medio>
+            <grado_superior>cursando IES la Mar Javea</grado_superior>
+        </datos_academicos>
+        <experiencia_laboral>
+            <farmacia>
+                <empresa>Ferreres</empresa>
+                <fecha_de_inicio>1 de junio</fecha_de_inicio>
+                <fecha_de_finalicacion>31 de agosto</fecha_de_finalicacion>
+                <trabajo_realizado>colocacion y venta de medicamentos</trabajo_realizado>
+                <horario>9-13/17-20</horario>
+                <dias>lunes a sabado</dias>
+            </farmacia>
+        </experiencia_laboral>
+    </curriculum>
+</curriculum>
+
+
