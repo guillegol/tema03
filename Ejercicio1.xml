@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE minecraftItems SYSTEM "DTD_Ejercicio1.dtd">
+<minecraftItems lang="es">
+    <item id="I01">
+        <name>Hacha de piedra</name>
+        <type>herramienta</type>
+        <rarity>piedra</rarity>
+        <damage>2</damage>
+        <description>Herramienta para cortar arboles 2 dmg</description>
+    </item>
+    
+     <item id="I02">
+        <name>espada de diamante</name>
+        <type>arma</type>
+        <rarity>diamante</rarity>
+        <damage>7</damage>
+        <description>arma corto alcancede 7 dmg</description>
+    </item>
+   
+    <item id="I03">
+        <id>3</id>
+        <name>arco</name>
+        <type>arma</type>
+        <rarity>madera</rarity>
+        <damage>3</damage>
+        <description>arma largo alcancede 3 dmg</description>
+     </item>
+    
+     <item id="I04">
+        <id>4</id>
+        <name>pico de netherite</name>
+        <type>herramienata</type>
+        <rarity>netherite</rarity>
+        <damage>6</damage>
+        <description>herramienta para piedra con 6 dmg</description>
+    </item>
+    
+    <item id="I05">
+        <id>5</id>
+        <name>pico de madera</name>
+        <type>herramienata</type>
+        <rarity>madera</rarity>
+        <damage>1</damage>
+        <description>herramienta para piedra con 1 dmg</description>
+    </item>
+
+
+ </minecraftItems>
