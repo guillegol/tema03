@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tickets SYSTEM "DTD3.dtd">
+<tickets>
+    <!-- Tiquet 1 -->
+    <ticket>
+        <membrete>
+            <razon_social>Santos S.A</razon_social>
+            <cif>546986248K</cif>
+            <direccion>Carrer tulipa 80</direccion>
+            <codigo_postal>03700</codigo_postal>
+            <poblacion>denia</poblacion>
+            <telefono>97552415</telefono>
+        </membrete>
+
+        <cabecera>
+            <numero_ticket>1</numero_ticket>
+            <fecha>02/10/2024</fecha>
+            <hora>17:29</hora>
+            <tpv>TPV1</tpv>
+        </cabecera>
+
+        <lineas>
+            <linea>
+                <cantidad>2</cantidad>
+                <codigo_articulo>A02</codigo_articulo>
+                <descripcion>Galletas</descripcion>
+                <precio>1.50</precio>
+                <importe>3.00</importe>
+            </linea>
+            <linea>
+                <cantidad>2</cantidad>
+                <codigo_articulo>A05</codigo_articulo>
+                <descripcion>Champoo</descripcion>
+                <precio>2.00</precio>
+                <importe>4.00</importe>
+            </linea>
+        </lineas>
+        <resumen>
+            <forma_de_pago>Tarjeta</forma_de_pago>
+            <total>7.00</total>
+        </resumen>
+    </ticket>
+    
+    <!-- Tiquet 2 -->
+    <ticket>
+        <membrete>
+            <razon_social>Juanes S.L</razon_social>
+            <cif>78956787G</cif>
+            <direccion>CARRER LUPITA</direccion>
+            <codigo_postal>03700</codigo_postal>
+            <poblacion>DENIA</poblacion>
+            <telefono>956841278</telefono>
+        </membrete>
+        <cabecera>
+            <numero_ticket>2</numero_ticket>
+            <fecha>29/05/2024</fecha>
+            <hora>17:38</hora>
+            <tpv>TPV2</tpv>
+        </cabecera>
+        <lineas>
+            <linea>
+                <cantidad>3</cantidad>
+                <codigo_articulo>08</codigo_articulo>
+                <descripcion>Nescuik</descripcion>
+                <precio>1.20</precio>
+                <importe>3.60</importe>
+            </linea>
+            <linea>
+                <cantidad>2</cantidad>
+                <codigo_articulo>09</codigo_articulo>
+                <descripcion>Papel</descripcion>
+                <precio>0.80</precio>
+                <importe>3.20</importe>
+            </linea>
+        </lineas>
+        <resumen>
+            <forma_de_pago>Efectivo</forma_de_pago>
+            <total>6.80</total>
+        </resumen>
+    </ticket>
+</tickets>
