@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE escena SYSTEM "dtd_escena.dtd">
+<escena lang="es">
+<escena>
+    <rectangulo>
+        <posicion>
+            <x>150</x>
+            <y>400</y>
+        </posicion>
+        <altura>120</altura>
+        <anchura>150</anchura>
+    </rectangulo>
+
+    <circunferencia>
+        <posicion>
+            <x>400</x>
+            <y>400</y>
+        </posicion>
+        <radio>100</radio>
+    </circunferencia>
+
+    <linea>
+        <origen>
+            <x>300</x> 
+            <y>520</y>
+        </origen>
+        <destino>
+            <x>400</x>
+            <y>400</y>
+        </destino>
+    </linea>
+</escena>
