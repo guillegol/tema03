@@ -1,0 +1,22 @@
+<!ELEMENT curriculum (datos_personales, datos_academicos, experiencia_laboral)>
+<!ATTLIST curriculum lang CDATA #REQUIRED>
+<!ELEMENT datos_personales (nombre, apellidos, direccion, telefono, dni, decripcion)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT apellidos (#PCDATA)>
+<!ELEMENT direccion (#PCDATA)>
+<!ELEMENT telefono (#PCDATA)>
+<!ELEMENT dni (#PCDATA)>
+<!ELEMENT decripcion (#PCDATA)>
+<!ELEMENT datos_academicos (primaria, eso, grado_medio, grado_superior)>
+<!ELEMENT primaria (#PCDATA)>
+<!ELEMENT eso (#PCDATA)>
+<!ELEMENT grado_medio (#PCDATA)>
+<!ELEMENT grado_superior (#PCDATA)>
+<!ELEMENT experiencia_laboral (farmacia)>
+<!ELEMENT farmacia (empresa, fecha_de_inicio, fecha_de_finalicacion, trabajo_realizado, horario, dias)>
+<!ELEMENT empresa (#PCDATA)>
+<!ELEMENT fecha_de_inicio (#PCDATA)>
+<!ELEMENT fecha_de_finalicacion (#PCDATA)>
+<!ELEMENT trabajo_realizado (#PCDATA)>
+<!ELEMENT horario (#PCDATA)>
+<!ELEMENT dias (#PCDATA)>
