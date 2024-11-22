@@ -1,0 +1,27 @@
+<!ELEMENT empresa (sucursal, tickets)>
+<!ATTLIST empresa cif ID #REQUIRED razon_social CDATA #REQUIRED web CDATA #IMPLIED>
+<!ELEMENT sucursal (nombre, direccion, codigo_postal, poblacion, telefonos)>
+<!ATTLIST sucursal codigo ID #REQUIRED>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT direccion (#PCDATA)>
+<!ELEMENT codigo_postal (#PCDATA)>
+<!ELEMENT poblacion (#PCDATA)>
+<!ELEMENT telefonos (telefono+)>
+<!ELEMENT telefono (#PCDATA)>
+<!ATTLIST telefono tipo (fijo|movil) #REQUIRED>
+<!ELEMENT tickets (ticket+)>
+<!ELEMENT ticket (fecha, hora, empleado, lineas_ticket, resumen)>
+<!ATTLIST ticket numero ID #REQUIRED>
+<!ELEMENT fecha (#PCDATA)>
+<!ELEMENT hora (#PCDATA)>
+<!ELEMENT empleado (#PCDATA)>
+<!ELEMENT lineas_ticket (linea+)>
+<!ELEMENT linea (descripcion, cantidad, precio_unitario, importe)>
+<!ATTLIST linea codigo_articulo ID #REQUIRED>
+<!ELEMENT descripcion (#PCDATA)>
+<!ELEMENT cantidad (#PCDATA)>
+<!ELEMENT precio_unitario (#PCDATA)>
+<!ELEMENT importe (#PCDATA)>
+<!ELEMENT resumen (forma_pago, importe_total)>
+<!ELEMENT forma_pago (#PCDATA)>
+<!ELEMENT importe_total (#PCDATA)>
