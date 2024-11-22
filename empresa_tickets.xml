@@ -1,6 +1,68 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE tickets SYSTEM "dtd_empresa_tickets.dtd">
-
-<tickets> 
-
-</tickets>
+<!DOCTYPE empresa SYSTEM "dtd_empresa_tickets.dtd">
+<empresa cif="A12345678" razon_social="Materiales X S.L." web="www.materialesx.com">
+    <sucursal codigo="001">
+        <nombre>Sucursal Madrid</nombre>
+        <direccion>Calle Mayor, 10</direccion>
+        <codigo_postal>28001</codigo_postal>
+        <poblacion>Madrid</poblacion>
+        <telefonos>
+            <telefono tipo="fijo">911234567</telefono>
+            <telefono tipo="movil">622345678</telefono>
+        </telefonos>
+    </sucursal>
+    <tickets>
+        <ticket numero="1001">
+            <fecha>2024-11-20</fecha>
+            <hora>10:30</hora>
+            <empleado>Juan Pérez</empleado>
+            <lineas_ticket>
+                <linea codigo_articulo="A001">
+                    <descripcion>Bolígrafo Azul</descripcion>
+                    <cantidad>3</cantidad>
+                    <precio_unitario>1.20</precio_unitario>
+                    <importe>3.60</importe>
+                </linea>
+                <linea codigo_articulo="A002">
+                    <descripcion>Cuaderno A4</descripcion>
+                    <cantidad>2</cantidad>
+                    <precio_unitario>3.50</precio_unitario>
+                    <importe>7.00</importe>
+                </linea>
+                <linea codigo_articulo="A003">
+                    <descripcion>Grapadora</descripcion>
+                    <cantidad>1</cantidad>
+                    <precio_unitario>12.00</precio_unitario>
+                    <importe>12.00</importe>
+                </linea>
+            </lineas_ticket>
+            <resumen>
+                <forma_pago>tarjeta</forma_pago>
+                <importe_total>22.60</importe_total>
+            </resumen>
+        </ticket>
+        <ticket numero="1002">
+            <fecha>2024-11-20</fecha>
+            <hora>14:15</hora>
+            <empleado>María López</empleado>
+            <lineas_ticket>
+                <linea codigo_articulo="A001">
+                    <descripcion>Bolígrafo Azul</descripcion>
+                    <cantidad>5</cantidad>
+                    <precio_unitario>1.20</precio_unitario>
+                    <importe>6.00</importe>
+                </linea>
+                <linea codigo_articulo="A004">
+                    <descripcion>Calculadora Científica</descripcion>
+                    <cantidad>1</cantidad>
+                    <precio_unitario>25.00</precio_unitario>
+                    <importe>25.00</importe>
+                </linea>
+            </lineas_ticket>
+            <resumen>
+                <forma_pago>bizum</forma_pago>
+                <importe_total>31.00</importe_total>
+            </resumen>
+        </ticket>
+    </tickets>
+</empresa>
