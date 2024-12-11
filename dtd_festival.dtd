@@ -1,0 +1,59 @@
+<!ELEMENT festival (informacion, escenarios, ubicaciones, artistas, entradas, actividades, patrocinadores)>
+<!ATTLIST festival 
+    lang CDATA #REQUIRED
+    version CDATA #REQUIRED
+    tema CDATA #REQUIRED>
+
+<!ELEMENT informacion (nombre, descripcion, fecha, ubicacion, organizador, redes_sociales)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT descripcion (#PCDATA)>
+<!ELEMENT fecha EMPTY>
+<!ATTLIST fecha inicio CDATA #REQUIRED fin CDATA #REQUIRED>
+<!ELEMENT ubicacion EMPTY>
+<!ATTLIST ubicacion ciudad CDATA #REQUIRED pais CDATA #REQUIRED direccion CDATA #REQUIRED latitud CDATA #REQUIRED longitud CDATA #REQUIRED>
+<!ELEMENT organizador (nombre, contacto, email)>
+<!ELEMENT contacto (#PCDATA)>
+<!ELEMENT email (#PCDATA)>
+<!ELEMENT redes_sociales (red+)>
+<!ELEMENT red EMPTY>
+<!ATTLIST red tipo CDATA #REQUIRED url CDATA #REQUIRED>
+
+<!ELEMENT escenarios (escenario+)>
+<!ELEMENT escenario (ubicacion)>
+<!ATTLIST escenario id CDATA #REQUIRED nombre CDATA #REQUIRED capacidad CDATA #REQUIRED tipo CDATA #REQUIRED genero_predominante CDATA #REQUIRED>
+<!ELEMENT ubicacion EMPTY>
+<!ATTLIST ubicacion zona CDATA #REQUIRED acceso CDATA #REQUIRED>
+
+<!ELEMENT ubicaciones (zona+)>
+<!ELEMENT zona (horario?, ubicacion?)>
+<!ATTLIST zona id CDATA #REQUIRED nombre CDATA #REQUIRED tipo CDATA #REQUIRED descripcion CDATA #REQUIRED servicios CDATA #REQUIRED acceso CDATA #IMPLIED>
+<!ELEMENT horario EMPTY>
+<!ATTLIST horario apertura CDATA #REQUIRED cierre CDATA #REQUIRED>
+<!ELEMENT ubicacion EMPTY>
+<!ATTLIST ubicacion latitud CDATA #REQUIRED longitud CDATA #REQUIRED zona CDATA #IMPLIED coordenadas CDATA #IMPLIED>
+
+<!ELEMENT artistas (artista+)>
+<!ELEMENT artista (nombre, actuacion)>
+<!ATTLIST artista id CDATA #REQUIRED genero CDATA #REQUIRED popularidad CDATA #REQUIRED nacionalidad CDATA #REQUIRED>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT actuacion EMPTY>
+<!ATTLIST actuacion escenario_id CDATA #REQUIRED inicio CDATA #REQUIRED fin CDATA #REQUIRED>
+
+<!ELEMENT entradas (entrada+)>
+<!ELEMENT entrada EMPTY>
+<!ATTLIST entrada tipo CDATA #REQUIRED precio CDATA #REQUIRED disponibilidad CDATA #REQUIRED acceso_vip CDATA #REQUIRED incluye_kit_bienvenida CDATA #REQUIRED acceso_backstage CDATA #IMPLIED>
+
+<!ELEMENT actividades (actividad+)>
+<!ELEMENT actividad (nombre, ubicacion, horario, instructor, descripcion)>
+<!ATTLIST actividad id CDATA #REQUIRED tipo CDATA #REQUIRED>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT ubicacion EMPTY>
+<!ATTLIST ubicacion zona_id CDATA #REQUIRED>
+<!ELEMENT horario EMPTY>
+<!ATTLIST horario inicio CDATA #REQUIRED fin CDATA #REQUIRED>
+<!ELEMENT instructor (#PCDATA)>
+<!ELEMENT descripcion (#PCDATA)>
+
+<!ELEMENT patrocinadores (patrocinador+)>
+<!ELEMENT patrocinador (#PCDATA)>
+<!ATTLIST patrocinador id CDATA #REQUIRED categoria CDATA #REQUIRED metodo_pago CDATA #REQUIRED descripcion CDATA #REQUIRED>

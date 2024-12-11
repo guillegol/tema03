@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE festival SYSTEM "dtd_festival.dtd">
+<festival lang="es" version="2.0" tema="Musica, Arte, Cultura y Gastronomia">
+    <informacion>
+        <nombre>Festival Zevra 2024</nombre>
+        <descripcion>
+            El Festival Zevra es un evento que combina musica, arte, cultura y gastronomia, 
+            ofreciendo experiencias inolvidables en la ciudad de Valencia.
+        </descripcion>
+        <fecha inicio="2024-06-01T12:00:00" fin="2024-06-03T23:59:00"/>
+        <ubicacion ciudad="Valencia" pais="Espana" direccion="Playa de la Malvarrosa" latitud="39.4702" longitud="-0.3768"/>
+        <organizador nombre="Zevra Productions" contacto="+34 900 123 456" email="contacto@zevraproductions.com"/>
+        <redes_sociales>
+            <red tipo="Facebook" url="https://facebook.com/FestivalZevra"/>
+            <red tipo="Instagram" url="https://instagram.com/FestivalZevra"/>
+            <red tipo="Twitter" url="https://twitter.com/FestivalZevra"/>
+        </redes_sociales>
+    </informacion>
+    <escenarios>
+        <escenario id="1" nombre="Escenario Principal" capacidad="5000" tipo="aire_libre" genero_predominante="Reggaeton">
+            <ubicacion zona="A" acceso="General y VIP"/>
+        </escenario>
+        <escenario id="2" nombre="Techno Stage" capacidad="2000" tipo="cubierto" genero_predominante="Techno">
+            <ubicacion zona="B" acceso="General"/>
+        </escenario>
+        <escenario id="3" nombre="Indie Stage" capacidad="3000" tipo="aire_libre" genero_predominante="Indie">
+            <ubicacion zona="C" acceso="VIP"/>
+        </escenario>
+    </escenarios>
+    <ubicaciones>
+        <zona id="Z1" nombre="Entrada Principal" tipo="Acceso" descripcion="Control de acceso general y VIP" servicios="Taquillas, Informacion"/>
+        <zona id="Z2" nombre="Zona de Comida" tipo="Servicio" descripcion="Food trucks y bebidas variadas" servicios="Comida rapida, Bebidas alcoholicas y no alcoholicas">
+            <horario apertura="2024-06-01T12:00:00" cierre="2024-06-03T23:59:00"/>
+        </zona>
+        <zona id="Z3" nombre="Zona de Descanso" tipo="Recreacion" descripcion="Zona chill-out para relajarse" servicios="Hamacas, Sombrillas, Musica ambiental">
+            <ubicacion latitud="39.4705" longitud="-0.3765"/>
+        </zona>
+        <zona id="Z4" nombre="Backstage" tipo="Privado" descripcion="Zona exclusiva para artistas y organizadores" acceso="Solo acreditados"/>
+        <zona id="Z5" nombre="Punto de Primeros Auxilios" tipo="Servicio" descripcion="Asistencia medica inmediata" servicios="Enfermeria, Ambulancia">
+            <ubicacion latitud="39.4701" longitud="-0.3769"/>
+        </zona>
+        <zona id="Z6" nombre="Zona de Conferencias" tipo="Cultural" descripcion="Espacio para talleres y charlas" acceso="VIP y General">
+            <ubicacion zona="D" coordenadas="39.4703,-0.3771"/>
+        </zona>
+    </ubicaciones>
+    <artistas>
+        <artista id="A01" genero="Techno" popularidad="medio" nacionalidad="Espana">
+            <nombre>Dj Kiko Rivera</nombre>
+            <actuacion escenario_id="2" inicio="2024-06-01T18:00:00" fin="2024-06-01T19:30:00"/>
+        </artista>
+        <artista id="A02" genero="Reggaeton" popularidad="alto" nacionalidad="Puerto Rico">
+            <nombre>Mike Towers</nombre>
+            <actuacion escenario_id="1" inicio="2024-06-01T20:00:00" fin="2024-06-01T21:30:00"/>
+        </artista>
+        <artista id="A03" genero="Indie" popularidad="medio" nacionalidad="Reino Unido">
+            <nombre>Band Yonder</nombre>
+            <actuacion escenario_id="3" inicio="2024-06-02T19:00:00" fin="2024-06-02T20:30:00"/>
+        </artista>
+    </artistas>
+    <entradas>
+        <entrada tipo="general" precio="50" disponibilidad="true" acceso_vip="false" incluye_kit_bienvenida="false"/>
+        <entrada tipo="VIP" precio="150" disponibilidad="false" acceso_vip="true" incluye_kit_bienvenida="true"/>
+        <entrada tipo="premium" precio="250" disponibilidad="true" acceso_vip="true" incluye_kit_bienvenida="true" acceso_backstage="true"/>
+    </entradas>
+    <actividades>
+        <actividad id="ACT01" tipo="taller">
+            <nombre>Zona Chillout</nombre>
+            <ubicacion zona_id="Z3"/>
+            <horario inicio="2024-06-01T15:00:00" fin="2024-06-01T16:00:00"/>
+            <instructor>Maria Lopez</instructor>
+            <descripcion>Un espacio para relajarte y desconectar con musica ambiental.</descripcion>
+        </actividad>
+        <actividad id="ACT02" tipo="conferencia">
+            <nombre>Villa Privada Influencers</nombre>
+            <ubicacion zona_id="Z6"/>
+            <horario inicio="2024-06-01T16:30:00" fin="2024-06-01T17:30:00"/>
+            <ponente>Juan Perez</ponente>
+            <descripcion>Un espacio exclusivo para conocer las ultimas tendencias en redes sociales.</descripcion>
+        </actividad>
+    </actividades>
+    <patrocinadores>
+        <patrocinador id="P01" categoria="Bebidas" metodo_pago="Suministro de producto" descripcion="Proporciona refrescos durante el evento">Coca-Cola</patrocinador>
+        <patrocinador id="P02" categoria="Energia" metodo_pago="Suministro de producto" descripcion="Proporciona bebidas energeticas para participantes y staff">Red Bull</patrocinador>
+        <patrocinador id="P03" categoria="Tabaco" metodo_pago="Transferencia bancaria" descripcion="Financia una parte de los escenarios">Marlboro</patrocinador>
+        <patrocinador id="P04" categoria="Agua" metodo_pago="Suministro de producto" descripcion="Proporciona agua embotellada para todo el evento">Beniarbeig</patrocinador>
+        <patrocinador id="P05" categoria="Alimentacin" metodo_pago="Transferencia bancaria" descripcion="Aporta fondos para la zona de comida">Bar Xato</patrocinador>
+        <patrocinador id="P06" categoria="Entretenimiento" metodo_pago="Intercambio de servicios" descripcion="Proporciona espectaculos adicionales para los asistentes">Quijote Show</patrocinador>
+        <patrocinador id="P07" categoria="Cerveza" metodo_pago="Suministro de producto y transferencia bancaria" descripcion="Proporciona cerveza artesanal para los bares del festival">Cerveza Turia</patrocinador>
+        <patrocinador id="P08" categoria="Tecnologia" metodo_pago="Transferencia bancaria" descripcion="Proporciona fondos para equipamiento audiovisual">Samsung</patrocinador>
+    </patrocinadores>
+</festival>
